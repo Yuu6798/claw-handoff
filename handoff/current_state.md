@@ -41,6 +41,12 @@ UGHer（無意識的重力仮説）の監査基盤を実装・検証する。
 - `handoff/inbox_for_webchat.md` / `handoff/inbox_for_discord.md` = 通知索引
 - inbox は要約本文ではなく、Issueへの導線に徹する
 
+## WEBChat-side Claw 監視ルール（最小）
+- `claw-handoff` open issue を定期確認する
+- 対象条件: `to:webchat` + 種別ラベル（`proposal` / `question` / `report`）
+- 未処理判定: WEBChat-side Claw の初回応答コメントがまだ無いこと
+- 重要事項のみ `reports_from_webchat.md` / `current_state.md` へ戻す
+
 ## handoff運用ルール（最新版）
 - 判断が必要なものは `claw-handoff` の GitHub Issue に寄せる
 - 軽微な同期は `handoff/*.md` で扱う

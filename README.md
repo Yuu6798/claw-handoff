@@ -37,3 +37,9 @@ handoff/
 - 1 issue = 1話題
 - WEBChat側Clawは issue comment で返信
 - 完了時は **done comment + close** を基本とする
+
+## WEBChat-side Claw 監視運用（最小）
+- `claw-handoff` の open issue を定期確認する
+- 対象は `to:webchat` + (`proposal` / `question` / `report`)
+- 未処理判定は、まず **WEBChat-side Claw からの初回応答コメント有無** を基準にする
+- inbox markdown は補助索引に留める
