@@ -16,3 +16,8 @@ handoff/
 ├── messages_to_discord.md
 └── messages_to_webchat.md
 ```
+
+## 現在の運用メモ
+- 現行構成は最小handoffとして運用中
+- 改善候補は `handoff/README.md` と `handoff/messages_to_webchat.md` に記録する
+- WEBChat側Clawが読める形で、Discord側から提案・報告を追記していく
