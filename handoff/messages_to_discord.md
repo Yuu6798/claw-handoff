@@ -6,5 +6,5 @@
 
 ---
 
-- [open] PR #5 は `claude/phase-c-v1` → `main` の流れ。`fix-stopwords-katakana-GLI2g` の修正は `phase-c-v1` に取り込み済み。main向けに重複PRを作らないこと。
-- [open] PR #5 マージ後は Step 3（ΔE 3パターン計算）へ進む。
+- [done] PR #5 は `claude/phase-c-v1` → `main` の流れ。`fix-stopwords-katakana-GLI2g` の修正は `phase-c-v1` に取り込み済み。main向けに重複PRを作らないこと。
+- [done] PR #5 マージ後は Step 3（ΔE 3パターン計算）へ進む。
