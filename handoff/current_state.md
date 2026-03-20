@@ -1,5 +1,14 @@
 # current_state.md
 
+## Next 1 Action
+- `ugh-audit-core` の PR #5 を確認・マージし、その後 Phase C v1 Step 3（ΔE 3パターン計算）へ進む。
+
+## Do Not
+- `phase_c_raw.jsonl` を上書きしない
+- `ugh3-metrics-lib` を変更しない
+- OpenAI API をユーザー明示承認なしで実行しない
+- `claw-handoff` を実装リポジトリ代わりに使わない
+
 ## 現在の対象プロジェクト
 - リポジトリ: `Yuu6798/ugh-audit-core`
 - ローカル: `/home/work/.openclaw/workspace/ugh-audit-core`
@@ -27,18 +36,12 @@ UGHer（無意識的重力仮説）の監査基盤を実装・検証する。
   - URL: `https://github.com/Yuu6798/ugh-audit-core/pull/5`
   - `fix-stopwords-katakana-GLI2g` の修正も取り込み済み
 
-## 次アクション
-1. PR #5 の確認・マージ
-2. Step 3: ΔE 3パターン計算（core/full/summary）
-3. Step 4: レポートを温度別・role別に再構成
-4. Step 5: v1再採点・v1レポート生成
-
-## 絶対ルール
-- `ugh-audit-core` のみ変更する
-- `ugh3-metrics-lib` は参照のみ、勝手に変更しない
-- `phase_c_raw.jsonl` は絶対に上書きしない
-- OpenAI API呼び出しはユーザー明示承認時のみ
-- 大きい変更はPR単位で進める
+## handoff運用ルール（最新版）
+- 判断が必要なものは `claw-handoff` の GitHub Issue に寄せる
+- 軽微な同期は `handoff/*.md` で扱う
+- タスクは `tasks_to_*.md`
+- 完了報告は `reports_from_*.md`
+- 重要判断は Issue comment に残し、完了時は `done comment + close`
 
 ## 役割分担の想定
 - Discord側 Claw: 実装・コード生成・PR更新

@@ -7,17 +7,32 @@ Claw セッション間（webchat / Discord など）の引き継ぎ・伝言・
 - 研究・実装タスクの文脈をチャット履歴依存にしない
 - 伝言と進行状況をGitHub上で追跡できるようにする
 
+## 現在の運用方針
+- **判断が必要なもの** → GitHub Issue
+- **軽微な同期** → `handoff/*.md`
+- **タスク** → `handoff/tasks_to_*.md`
+- **完了報告** → `handoff/reports_from_*.md`
+- **全体状況** → `handoff/current_state.md`
+
 ## ディレクトリ構成
 
 ```text
 handoff/
 ├── README.md
 ├── current_state.md
-├── messages_to_discord.md
-└── messages_to_webchat.md
+├── tasks_to_discord.md
+├── tasks_to_webchat.md
+├── reports_from_discord.md
+└── reports_from_webchat.md
 ```
 
-## 現在の運用メモ
-- 現行構成は最小handoffとして運用中
-- 改善候補は `handoff/README.md` と `handoff/messages_to_webchat.md` に記録する
-- WEBChat側Clawが読める形で、Discord側から提案・報告を追記していく
+## GitHub Issue 運用
+### 推奨タイトル接頭辞
+- `[proposal] ...`
+- `[question] ...`
+- `[report] ...`
+
+### 推奨ルール
+- 1 issue = 1話題
+- WEBChat側Clawは issue comment で返信
+- 完了時は **done comment + close** を基本とする
