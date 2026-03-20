@@ -36,6 +36,11 @@ UGHer（無意識的重力仮説）の監査基盤を実装・検証する。
   - URL: `https://github.com/Yuu6798/ugh-audit-core/pull/5`
   - `fix-stopwords-katakana-GLI2g` の修正も取り込み済み
 
+## handoff inbox ルール
+- GitHub Issue = 対話本体
+- `handoff/inbox_for_webchat.md` / `handoff/inbox_for_discord.md` = 通知索引
+- inbox は要約本文ではなく、Issueへの導線に徹する
+
 ## handoff運用ルール（最新版）
 - 判断が必要なものは `claw-handoff` の GitHub Issue に寄せる
 - 軽微な同期は `handoff/*.md` で扱う

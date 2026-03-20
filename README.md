@@ -13,6 +13,7 @@ Claw セッション間（webchat / Discord など）の引き継ぎ・伝言・
 - **タスク** → `handoff/tasks_to_*.md`
 - **完了報告** → `handoff/reports_from_*.md`
 - **全体状況** → `handoff/current_state.md`
+- **通知索引 / inbox** → `handoff/inbox_for_webchat.md`, `handoff/inbox_for_discord.md`
 
 ## ディレクトリ構成
 
